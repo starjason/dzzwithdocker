@@ -26,7 +26,8 @@ RUN a2enmod rewrite
 RUN mkdir -p /dzz && rm -fr /var/www/html && ln -s /dzz /var/www/html
 
 # Download DzzOffice
-RUN wget http://down.dzzoffice.com/dzzoffice1.0/dzzoffice1.0_SC_UTF8_Release20140513.zip -O /tmp/dzzoffice.zip 
+# RUN wget http://down.dzzoffice.com/dzzoffice1.0/dzzoffice1.0_SC_UTF8_Release20140513.zip -O /tmp/dzzoffice.zip 
+RUN wget http://down.dzzoffice.com/dzzoffice1.2/dzzoffice1.2.5.2_SC_UTF8.zip -O /tmp/dzzoffice.zip
 RUN unzip /tmp/dzzoffice.zip
 
 # Deploy DzzOffice
